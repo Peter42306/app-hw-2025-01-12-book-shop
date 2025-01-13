@@ -1,0 +1,122 @@
+/* Стили для крупных экранов */
+@media (min-width: 768px) {
+
+    .book-card {        
+        width: 18rem;
+        height:44rem;        
+        margin: 0px;
+        padding: 3px;
+        /* margin-bottom: 1px;            */
+        background-color: beige;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+        transition: box-shadow 0.3s ease; /* Анимация */
+        border: none; /* Убираем стандартную рамку */
+        border-radius: 18px; /* Слегка скругляем углы */
+      }
+
+      .book-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Более сильная тень при наведении */
+      }
+      
+    .book-card-title {
+        font-size: 1.2rem;
+        text-align: left;
+        /* display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: auto; */
+      
+    }
+  
+    .book-card-description {
+      font-size: 0.9rem;
+      text-align: left;     
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* Ограничение в 3 строки */
+      -webkit-box-orient: vertical;
+      overflow: auto;      
+    }
+
+    .book-card-author {
+        font-size: 1rem;
+        text-align: left;
+        
+    }
+
+    .book-card-price {
+        font-size: 1.1rem;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .book-card-button {        
+        text-align: center;
+        margin-bottom: 1px;
+    }
+  }
+  
+  /* Стили для мобильных экранов */
+  @media (max-width: 767px) {
+
+    .book-card {  
+        width: 22rem;
+        height:43rem;        
+        /* margin: 0px;
+        padding: 3px;
+        margin-bottom: 5px;        
+        background-color: beige */
+        /* width: 100%;
+        max-width: 320px; */
+        height: auto;
+        margin: 5px auto;
+        padding: 10px;
+        background-color: beige;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .book-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Более сильная тень при наведении */
+    }
+
+    .book-card-title {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+  
+    .book-card-description {
+        font-size: 1rem;
+        text-align: left;
+        display: -webkit-box;
+      -webkit-line-clamp: 3; /* Ограничение в 3 строки */
+      -webkit-box-orient: vertical;
+      overflow: auto;      
+    }
+    .book-card-author {
+        font-size: 1rem;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .book-card-price {
+        font-size: 1rem;
+        text-align: right;
+        font-weight: bold;
+    }
+    .pagination {
+      position: fixed; /* Фиксируем внизу экрана */
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background-color: #fff;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+  }
