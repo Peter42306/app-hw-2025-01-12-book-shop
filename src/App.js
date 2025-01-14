@@ -8,6 +8,11 @@ import BookOrder from './components/BookOrder/BookOrder';
 import books from './data/books';
 import { useState } from 'react';
 import OrderConfirmationModal from './components/OrderConfirmationModal/OrderConfirmationModal';
+import CardForm from './components/CardForm/CardForm';
+import cardData1 from './data/cardData1';
+import cardData2 from './data/cardData2';
+import cardData3 from './data/cardData3';
+
 
 function App() {  
 
@@ -43,26 +48,46 @@ function App() {
 
 
   return (
-    <Container className='mt-3 w-100'>
+    
+    <Container className='mt-3'>
       <Row>
-
-        <Col lg={9}>
-          <BooksList books={books} booksPerPage={3} onBookSelect={handleBookSelect}></BooksList>
-        </Col>
-
-        <Col lg={3}>
-          <BookOrder book={selectedBook} onOrderSubmit={handleOrderSubmit}></BookOrder>
-        </Col>    
-
+        <Col>
+          <CardForm cardData={cardData1}></CardForm>
+        </Col>        
+        <Col>
+          <CardForm cardData={cardData2}></CardForm>
+        </Col>        
+        <Col>
+          <CardForm cardData={cardData3}></CardForm>
+        </Col>        
       </Row>      
+    </Container>    
 
-      <OrderConfirmationModal
-          show={modalShow}
-          onHide={handleCloseModal}
-          orderDetails={orderDetails}
-        >
-        </OrderConfirmationModal>    
-    </Container>
+    //////////////////////////////////////////////
+    // Book shop
+
+    // <Container className='mt-3 w-100'>
+      
+
+    //   <Row>
+
+    //     <Col lg={9}>
+    //       <BooksList books={books} booksPerPage={3} onBookSelect={handleBookSelect}></BooksList>
+    //     </Col>
+
+    //     <Col lg={3}>
+    //       <BookOrder book={selectedBook} onOrderSubmit={handleOrderSubmit}></BookOrder>
+    //     </Col>    
+
+    //   </Row>      
+
+    //   <OrderConfirmationModal
+    //     show={modalShow}
+    //     onHide={handleCloseModal}
+    //     orderDetails={orderDetails}
+    //     >
+    //     </OrderConfirmationModal>
+    // </Container>
   );
 }
 

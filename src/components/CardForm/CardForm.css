@@ -1,0 +1,73 @@
+.card-container {
+    width: 350px;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.header-item {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: whitesmoke;
+    background-color:slategrey;
+}
+
+.upper-button:disabled {
+    width: 55%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    background-color: gray;
+    border: none;
+}
+
+.upper-button-payment-per-period {
+    color:brown;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.upper-button-payment-period {
+    color:chartreuse;
+    font-size: 15px;    
+}
+
+.list-group-item {
+    border: none !important;
+    padding-left: 5;
+}
+
+.icon-check-circle {
+    color: green;    
+}
+
+.icon-x-circle {
+    color: crimson;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower-button {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 40px;
+    background-color: slategray;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+}
